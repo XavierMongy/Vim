@@ -9,7 +9,18 @@
   <body>
 	<h1>Cheat sheet Vim by Xavier</h1>
 
-	<h2>Mouvement du curseur</h2>
+		<p>
+			Aller à : <br />
+			<a href="#mouvement">Mouvement du curseur</a><br />
+			<a href="#insertion">Mode insertion</a><br />
+			<a href="#editer">Editer</a><br />
+			<a href="#marquer">Marquer du texte</a><br />
+			<a href="#copier">Copier-Coller</a><br />
+			<a href="#quitter">Quitter</a>
+		</p>
+
+
+	<h2 id="mouvement">Mouvement du curseur</h2>
 		<ul>
 			<li><mark>h</mark> -déplacer le curseur vers la gauche</li><br />
 			<li><mark>j</mark> -déplacer le curseur ver le bas</li><br />
@@ -22,18 +33,18 @@
 			<li><mark>gg</mark> -aller à la dernière ligne du document</li>
 		</ul>
 
-	<h2>Mode insertion</h2>
+	<h2 id="insertion">Mode insertion</h2>
 		<ul>
 			<li><mark>i</mark> -insérer avant le curseur</li><br />
 			<li><mark>I</mark> -insérer au début du curseur</li><br />
 			<li><mark>a</mark> -insérer après le curseur</li><br />
 			<li><mark>A</mark> -insérer à la fin de la ligne</li><br />
 			<li><mark>o</mark> -ajouter une nouvelle ligne vers le bas</li><br />
-			<li><mark>O</mark> -ajouter une nouvelle ligne vers le haut</li><br />				<<li><mark>ea</mark> -insérer à la fin d'un mot</li><br />
+			<li><mark>O</mark> -ajouter une nouvelle ligne vers le haut</li><br />				<li><mark>ea</mark> -insérer à la fin d'un mot</li><br />
 			<li><mark>Esc</mark> -quitter le mode insertion</li>
 		</ul>
 
-	<h2>Editer</h2>
+	<h2 id="editer">Editer</h2>
 		<ul>
 			<li><mark>r</mark> -remplacer un caractère</li><br />
 			<li><mark>J</mark> -joindre la ligne suivante à la ligne en cours</li><br />
@@ -48,7 +59,7 @@
 			<li><mark>.</mark> -répéter la commande précédente</li>
 		</ul>
 
-	<h2>Marquer du texte</h2>
+	<h2 id="marquer">Marquer du texte</h2>
 		<ul>
 			<li><mark>v</mark> - passer en mode visuel, marquer du texte, exécuter des commandes (comme y)</li><br />
 			<li><mark>V</mark> - passer en mode visuel ligne par ligne</li><br />
@@ -63,7 +74,7 @@
 			<li><mark>Esc</mark> - quitter le mode visuel</li>
 		</ul>
 
-	<h2>Copier-Coller</h2>
+	<h2 id="copier">Copier-Coller</h2>
 		<ul>
 			<li><mark>yy</mark> - copier un ligne</li><br />
 			<li><mark>2yy</mark> - copier 2 lignes</li><br />
@@ -78,7 +89,7 @@
 			<li><mark>x</mark> - supprimer un caractère</li>
 		</ul>
 
-	<h2>Quitter</h2>
+	<h2 id="quitter">Quitter</h2>
 		<ul>
 			<li><mark>:w</mark> - sauver le fichier</li><br />
 			<li><mark>:w !sudo tee %</mark> - write out the current file using sudo</li><br />
