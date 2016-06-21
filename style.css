@@ -2,7 +2,7 @@ h1
 {
 
 	font-family: Impact;
-	
+
 }
 
 h2
@@ -16,3 +16,11 @@ h2
 
 
 }	
+
+mark
+{
+
+	background-color: rgba(128,128,128,0.2);
+	font-family: arial;
+
+}
