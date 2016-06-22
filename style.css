@@ -11,8 +11,7 @@ h2
 	color: blue;
 	font-style: italic;
 	background-color: rgba(128,128,128,0.2);
-	margin-bottom: 3%;
-	margin-top: 3%
+	
 
 
 }	
@@ -31,3 +30,4 @@ mark
 	margin-top: 10%;
 	border: 2px black solid;
 }
+
