@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Cheat Sheet Vim's Commands</title>	
+  </head>
+
+  <body>
+	<h1>Cheat sheet Vim by Xavier</h1>
+
+		<nav>
+			Aller à : <br />
+			<a href="#mouvement">Mouvement du curseur</a><br />
+			<a href="#insertion">Mode insertion</a><br />
+			<a href="#editer">Editer</a><br />
+			<a href="#marquer">Marquer du texte</a><br />
+			<a href="#copier">Copier-Coller</a><br />
+			<a href="#quitter">Quitter</a>
+		</nav>
+
+	<h2 id="mouvement">Mouvement du curseur</h2>
+		<ul>
+			<li><mark>h</mark> -déplacer le curseur vers la gauche</li><br />
+			<li><mark>j</mark> -déplacer le curseur ver le bas</li><br />
+			<li><mark>k</mark> -dépalcer le curseur ver le haut</li><br />
+			<li><mark>l</mark> -déplacer le curseur vers la droite</li><br />
+			<li><mark>w</mark> -aller en avant au début du mot</li><br />
+			<li><mark>$</mark> -aller à la fin de la ligne</li><br />
+			<li><mark>0</mark> -aller au début de la ligne</li><br />
+			<li><mark>G</mark> -aller à la première ligne du document</li><br />
+			<li><mark>gg</mark> -aller à la dernière ligne du document</li>
+		</ul>
+
+	<h2 id="insertion">Mode insertion</h2>
+		<ul>
+			<li><mark>i</mark> -insérer avant le curseur</li><br />
+			<li><mark>I</mark> -insérer au début du curseur</li><br />
+			<li><mark>a</mark> -insérer après le curseur</li><br />
+			<li><mark>A</mark> -insérer à la fin de la ligne</li><br />
+			<li><mark>o</mark> -ajouter une nouvelle ligne vers le bas</li><br />
+			<li><mark>O</mark> -ajouter une nouvelle ligne vers le haut</li><br />				<li><mark>ea</mark> -insérer à la fin d'un mot</li><br />
+			<li><mark>Esc</mark> -quitter le mode insertion</li>
+		</ul>
+
+	<h2 id="editer">Editer</h2>
+		<ul>
+			<li><mark>r</mark> -remplacer un caractère</li><br />
+			<li><mark>J</mark> -joindre la ligne suivante à la ligne en cours</li><br />
+			<li><mark>cc</mark> -changer une ligne entière</li><br />
+			<li><mark>cw</mark> -changer jusqu'à la fin d'un mot</li><br />
+			<li><mark>c$</mark> -changer jusqu'à la fin d'une ligne</li><br />
+			<li><mark>s</mark> -supprimer un caractère et le remplacer par du texte</li><br />
+			<li><mark>S</mark> -supprimer une ligne et la remplacer par du texte</li><br />
+			<li><mark>xp</mark> -transposer deux lettres</li><br />
+			<li><mark>u</mark> -annuler</li><br />
+			<li><mark>Ctrl + r</mark>-rétablir</li><br />
+			<li><mark>.</mark> -répéter la commande précédente</li>
+		</ul>
+
+	<h2 id="marquer">Insérer du texte</h2>
+		<ul>
+			<li><mark>v</mark> - passer en mode visuel, marquer du texte, exécuter des commandes (comme y)</li><br />
+			<li><mark>V</mark> - passer en mode visuel ligne par ligne</li><br />
+			<li><mark>o</mark> - se déplader à l'autre extrémité de la zone marquée</li><br />
+			<li><mark>CTRL + v</mark> - passer en mode visuel par bloc</li><br />
+			<li><mark>O</mark> - se déplacer à l'autre angle du bloc</li><br />
+			<li><mark>aw</mark> - marquer un mot</li><br />
+			<li><mark>ab</mark> - marquer un bloc avec ()</li><br />
+			<li><mark>aB</mark> - marquer un bloc avec {}</li><br />
+			<li><mark>ib</mark> - marquer par bloc le contenu de ()</li><br />			
+			<li><mark>iB</mark> - marquer par bloc le contenu de {}</li><br />	
+			<li><mark>Esc</mark> - quitter le mode visuel</li>
+		</ul>
+
+	<h2 id="copier">Copier-Coller</h2>
+		<ul>
+			<li><mark>yy</mark> - copier un ligne</li><br />
+			<li><mark>2yy</mark> - copier 2 lignes</li><br />
+			<li><mark>yw</mark> - copier un mot</li><br />
+			<li><mark>y$</mark> - copier jusqu'à la fin de la ligne</li><br />
+			<li><mark>p</mark> - coller le presse-papier après le curseur</li><br />
+			<li><mark>P</mark> - coller le presse-papier avant le curseur</li><br />
+			<li><mark>dd</mark> - supprimer une ligne</li><br />
+			<li><mark>dw</mark> - supprimer un mot</li><br />
+			<li><mark>D</mark> - supprimer jusqu'à la fin de la ligne</li><br />
+			<li><mark>d$</mark> - supprimer jusqu'à la fin de la ligne</li><br />
+			<li><mark>x</mark> - supprimer un caractère</li>
+		</ul>
+
+	<h2 id="quitter">Quitter</h2>
+		<ul>
+			<li><mark>:w</mark> - sauver le fichier</li><br />
+			<li><mark>:w !sudo tee %</mark> - write out the current file using sudo</li><br />
+			<li><mark>:wq où :x où ZZ</mark>- sauver et quitter</li><br />
+			<li><mark>:q</mark> - quitter</li><br />
+			<li><mark>:q! or ZQ</mark> -quitter et abandonner les modifications non sauvegardée</li>
+		</ul>
+
+  </body>
+
+  <footer>
+	<p class="sources">Source : http://vim.rtorr.com/</p>
+
+  </footer>
+</html>
